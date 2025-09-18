@@ -1,4 +1,4 @@
-# cp-05-02sem-front
+# cp-05-02sem-front 
 LISTA DE EXERCÍCIOS /1   - CP5 = Valor 50pts
 
 🧪 Exercício 1: Listagem de Produtos com useEffect e useState
@@ -96,3 +96,11 @@ Tipar corretamente a função de exclusão.
 - Utilize o exercício da aula como base deste exercício.
 - O projeto deve ser realizado em grupo do challenger e entregue somente o projeto sem a pasta node_modules. - Caso a pasta node_modules for entregue será descontado 50% da nota.
 - Coloque todos os dados dos integrantes e detalhes do projeto no README.MD
+
+
+# Integrantes
+Moisés Waidemann Molinillo Júnior, RM: 563719 
+Gabriel Sbrana Campos, RM: 565849 
+Thiago Rodrigues da Mota, RM: 563650
+
+ # detalhes do projeto
