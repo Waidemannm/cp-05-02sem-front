@@ -19,7 +19,7 @@ export default function ProdutoList() {
 
   return(
     <main >
-        <h2>Nossos Produtos mais Famosos</h2>
+        <h1 className="text">Nossos Produtos mais Famosos</h1>
         <div className="pageCards">{produtos.map((p) =>(
             <CardMc mc={p}/>
         ))}</div>
