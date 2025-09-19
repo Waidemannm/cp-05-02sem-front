@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { TipoMc } from "../../types/tipoMc";
 import { useParams } from "react-router-dom";
+import CardMc from "../../components/CardMc/CardMc";
 
 export default function ProdutoList() {
 
@@ -17,8 +18,11 @@ export default function ProdutoList() {
     }, [id]);
 
   return(
-    <main>
-        <div></div>
+    <main className="pageCards">
+        <h2>Nossos Produtos mais Famosos</h2>
+        <div >{produtos.map((p) =>(
+            <CardMc mc={p}/>
+        ))}</div>
     </main>
   );
 }
