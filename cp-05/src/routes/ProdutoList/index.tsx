@@ -18,9 +18,9 @@ export default function ProdutoList() {
     }, [id]);
 
   return(
-    <main className="pageCards">
+    <main >
         <h2>Nossos Produtos mais Famosos</h2>
-        <div >{produtos.map((p) =>(
+        <div className="pageCards">{produtos.map((p) =>(
             <CardMc mc={p}/>
         ))}</div>
     </main>

@@ -4,13 +4,19 @@
     scroll-behavior:smooth;
 }
 
-@layer produtos{
-    .pageCards{
-        @apply flex flex-wrap w-[100vw] m-auto overflow-auto justify-center;
-    }
-    .card{
-        @apply h-[25vh] border-2 m-5 w-50 p-8;
-    }
+
+@layer components {
+  .imgGitUser {
+    @apply w-[140px] h-[120px];
+  }
+
+  .pageCard {
+    @apply flex flex-row w-screen h-screen justify-between ;
+  }
+
+  .card {
+    @apply h-[27vh] border-2 m-5 w-[200px] p-8;
+  }
 }
 
 @layer base{
@@ -18,9 +24,12 @@
         @apply flex flex-col w-screen h-screen justify-between;
 
         & header{
-            @apply bg-gray-50 text-white w-screen h-[20vh];
-        } & .cabecalho{
+            @apply bg-gray-50  w-screen h-[20vh] text-center text-4xl font-bold p-5;
+        } & .text{
             @apply text-black text-center text-4xl font-bold p-5;
+        }
+        & .textRodape {
+            @apply text-gray-600 text-center text-2xl;
         }
 
         & main{
