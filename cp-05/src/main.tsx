@@ -6,7 +6,7 @@ import App from './App';
 import Error from './routes/Error';
 import Home from './routes/Home';
 import ProdutoList from './routes/ProdutoList';
-import DetalhesProdutos from './routes/DetalhesProdutos';
+import DetalhesProdutos from './routes/ProdutoDetail';
 
 const router = createBrowserRouter([
   {path:"/", element: <App/>, errorElement: <Error/>, children:[
