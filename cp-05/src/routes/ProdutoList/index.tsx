@@ -26,6 +26,7 @@ export default function ProdutoList() {
             </Link> 
             ))}
         </div>
+        <div><Link className="adcProduto" to={"/produtos/criar"}>Adicionar Produto</Link></div>
     </main>
   );
 }

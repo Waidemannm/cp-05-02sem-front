@@ -24,11 +24,11 @@ export default function CreateProdutoForm() {
 
     return(
         <div>
-            <h1>Adicionando Produto</h1>
+            <h1 className="text">Adicionando Produto</h1>
             <div>
                 <form className="frmCriar" onSubmit={onSubmit}>
-                    //O campo id não é necessário no formulário de criação(POST), pois o id será gerado automaticamente pelo json-server
-                    //Diferente do formulário de edição(PUT) que precisa do campo id para identificar qual objeto será atualizado, ou no de deletar(DELETE) que também precisa do id para identificar qual objeto será removido
+                    {/* O campo id não é necessário no formulário de criação(POST), pois o id será gerado automaticamente pelo json-server
+                    Diferente do formulário de edição(PUT) que precisa do campo id para identificar qual objeto será atualizado, ou no de deletar(DELETE) que também precisa do id para identificar qual objeto será removido */}
                     <div>
                         <label>Nome:</label>
                         <input type="text" {...register("nome", { required: true, maxLength: 100})} />
@@ -42,7 +42,7 @@ export default function CreateProdutoForm() {
                         <input type="text" {...register("urlImg", { required: true, maxLength: 355})} />
                     </div>
                     <div>
-                        <button type="submit">Adicionar Produto</button>
+                        <button className="adcProduto" type="submit">Adicionar Produto</button>
                     </div>
                 </form>
             </div>

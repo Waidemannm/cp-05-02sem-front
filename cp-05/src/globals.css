@@ -20,6 +20,9 @@
   .card {
     @apply h-[27vh] border-2 m-10 w-[15vw] p-11 text-center;
   }
+  .adcProduto{
+    @apply text-red-800 text-center text-2xl font-bold p-15;
+  }
 }
 
 @layer datails{
