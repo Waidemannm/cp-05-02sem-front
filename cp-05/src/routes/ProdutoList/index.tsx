@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import type { TipoMc } from "../../types/tipoMc";
 import { Link, useParams } from "react-router-dom";
 import CardMc from "../../components/CardMc/CardMc";
+import { MdAdd } from "react-icons/md";
 
 export default function ProdutoList() {
 
@@ -26,7 +27,7 @@ export default function ProdutoList() {
             </Link> 
             ))}
         </div>
-        <div><Link className="adcProduto" to={"/produtos/criar"}>Adicionar Produto</Link></div>
+        <div><Link className="adcProduto" to={"/produtos/criar"}><MdAdd size={20}/> Adicionar Produto</Link></div>
     </main>
   );
 }
