@@ -6,27 +6,56 @@
 
 
 @layer components {
-  .imgGitUser {
-    @apply w-36 h-30;;
+  .imgCard{
+    @apply w-[15vw] h-[15vh];
   }
 
   .pageCards{
-    @apply flex flex-row  h-screen justify-between;
+    @apply flex flex-row h-screen justify-center flex-wrap overflow-auto;
+    & a{
+        @apply m-2 justify-center items-center flex flex-col; 
+    }
   }
 
   .card {
-    @apply h-[27vh] border-2 m-5 w-[200px] p-8;
+    @apply h-[27vh] border-2 m-10 w-[15vw] p-11 text-center;
   }
+}
+
+@layer datails{
+    .pageDetails{
+        @apply flex justify-center;
+    }
+    .imgDetails{
+        @apply  w-[12vw] h-[15vh];
+
+        & a{
+            @apply flex flex-col justify-center items-center;
+        }
+    }   
+    .details{
+        @apply flex flex-col text-2xl justify-center items-center  h-[35vh] border-2 m-10 w-[15vw] p-10 text-center;
+        & p{
+            @apply m-2 text-gray-600 text-center text-2xl;
+        }
+    }
 }
 
 @layer base{
     .container{
-        @apply flex flex-col h-screen justify-between text-center;
+        @apply flex flex-col h-screen justify-between text-center ;
+        & p{
+            @apply m-10 text-gray-600 text-center text-2xl;
+        }
 
         & header{
             @apply bg-gray-50  w-screen h-[20vh] text-center text-4xl font-bold p-5;
-        } & .text{
-            @apply text-black text-center text-3xl font-bold p-5;
+            & h1{
+                @apply text-black text-center text-3xl font-bold p-5;
+            }
+        } 
+        & .text{
+            @apply text-red-800 text-center text-3xl font-bold p-5;
         }
         & .textRodape {
             @apply text-gray-600 text-center text-2xl;
@@ -34,14 +63,6 @@
 
         & main{
             @apply w-screen h-[60vh] overflow-auto;
-            
-            & table{
-                @apply border-2 p-[10px] m-auto;
-
-                & th,td{
-                    @apply border-2 text-center p-[10px];
-                }
-            }
         }
 
         & footer{

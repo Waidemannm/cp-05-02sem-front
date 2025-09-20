@@ -21,10 +21,14 @@ export default function ProdutoDetail(){
     return(
         <main>
             <h1 className="text">Detalhes do {produto?.nome}</h1>
-            <img src={produto?.urlImg} alt={`Imagem do ${produto?.nome}`} />
-            <p>{produto?.nome}</p>
-            <p>{produto?.preco}</p>
-            <p>Id: {produto?.id}</p>
+            <div className="pageDetails">
+                <div className="details">
+                <img className="imgDetails" src={produto?.urlImg} alt={`Imagem do ${produto?.nome}`} />
+                <p>{produto?.nome}</p>
+                <p>R${produto?.preco}</p>
+                <p>Id: {produto?.id}</p>
+            </div>
+            </div>
         </main>
     );
 }
