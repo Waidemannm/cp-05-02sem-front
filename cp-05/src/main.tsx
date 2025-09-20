@@ -6,11 +6,13 @@ import App from './App';
 import Error from './routes/Error';
 import Home from './routes/Home';
 import ProdutoList from './routes/ProdutoList';
+import DetalhesProdutos from './routes/DetalhesProdutos';
 
 const router = createBrowserRouter([
   {path:"/", element: <App/>, errorElement: <Error/>, children:[
     {path:"/", element: <Home/>},
-    {path:"/produtos", element:<ProdutoList/>}
+    {path:"/produtos", element:<ProdutoList/>},
+    {path:"/produtos/:id", element: <DetalhesProdutos/>}
   ]}
 ]);
 
