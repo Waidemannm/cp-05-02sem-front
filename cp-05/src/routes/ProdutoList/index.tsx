@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { TipoMc } from "../../types/tipoMc";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import CardMc from "../../components/CardMc/CardMc";
 
 export default function ProdutoList() {
@@ -21,8 +21,11 @@ export default function ProdutoList() {
     <main >
         <h1 className="text">Nossos Produtos mais Famosos</h1>
         <div className="pageCards">{produtos.map((p) =>(
-            <CardMc mc={p}/>
-        ))}</div>
+            <Link to={`/produtos/${p.id}`}>
+                <CardMc mc={p}/>
+            </Link> 
+            ))}
+        </div>
     </main>
   );
 }
