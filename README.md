@@ -1,5 +1,4 @@
 # cp-05-02sem-front 
-LISTA DE EXERCÍCIOS /1   - CP5 = Valor 50pts
 
 🧪 Exercício 1: Listagem de Produtos com useEffect e useState
 Objetivo: Fazer uma requisição GET à API e renderizar os dados.
