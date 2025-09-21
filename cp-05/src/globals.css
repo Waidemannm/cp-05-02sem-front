@@ -7,18 +7,18 @@
 
 @layer components {
   .imgCard{
-    @apply w-[19vw] h-[15vh];
+    @apply w-[19vw] h-[17vh];
   }
 
   .pageCards{
-    @apply flex h-screen justify-center flex-wrap overflow-auto;
+    @apply flex h-screen justify-center flex-wrap overflow-auto gap-12;
     & a{
         @apply m-2 justify-center items-center flex flex-col; 
     }
   }
 
   .card {
-    @apply h-[29vh] border-2 m-10 w-[15vw] p-11 text-center;
+    @apply flex flex-col h-[40vh] border-2 m-10 w-[15vw] p-8 text-center gap-8;
   }
 }
 
@@ -28,12 +28,12 @@
         @apply flex justify-center ;
     }
     .btnProduto{
-    @apply text-black text-center text-2xl font-bold  flex flex-row justify-center items-center;
+    @apply text-black text-center text-2xl font-bold flex flex-row justify-center items-center;
   }
   .form{
-    @apply flex flex-col justify-center items-center text-center h-[38vh] border-2 m-5 w-[30vw] p-10 text-center;
+    @apply flex flex-col justify-center items-center text-center h-[48vh] border-2 m-5 w-[30vw] p-10 text-center gap-7; 
     & div{
-        @apply flex flex-col m-2;
+        @apply flex flex-col m-2 gap-2;
     }
   }
 }

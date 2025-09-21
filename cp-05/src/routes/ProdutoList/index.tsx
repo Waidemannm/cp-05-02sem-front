@@ -3,7 +3,6 @@ import type { TipoMc } from "../../types/tipoMc";
 import { Link, useParams } from "react-router-dom";
 import CardMc from "../../components/CardMc/CardMc";
 import { MdAdd } from "react-icons/md";
-import { CiEdit } from "react-icons/ci";
 
 export default function ProdutoList() {
 
