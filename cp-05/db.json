@@ -7,10 +7,10 @@
       "urlImg": "../public/Image/Img-lanches/big-mc.png"
     },
     {
-      "id": "2",
       "nome": "McLanche Flurry",
       "preco": "22.50",
-      "urlImg": "../public/Image/Img-sobremesa/mc-flurry.png"
+      "urlImg": "../public/Image/Img-sobremesa/mc-flurry.png",
+      "id": "2"
     },
     {
       "id": "3",
@@ -31,10 +31,10 @@
       "urlImg": "../public/Image/Img-lanches/Cheeseburguer.png"
     },
     {
-      "id": "6",
       "nome": "Cheddar McMelt",
       "preco": "8.90",
-      "urlImg": "../public/Image/Img-lanches/Cheddar-McMelt.png"
+      "urlImg": "../public/Image/Img-lanches/Cheddar-McMelt.png",
+      "id": "6"
     },
     {
       "id": "7",
