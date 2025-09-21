@@ -18,7 +18,7 @@
   }
 
   .card {
-    @apply flex flex-col h-[40vh] border-2 m-10 w-[15vw] p-8 text-center gap-8;
+    @apply flex flex-col h-[45vh] border-2 m-10 w-[15vw] p-8 text-center gap-8;
   }
 }
 
