@@ -8,13 +8,15 @@ import Home from './routes/Home';
 import ProdutoList from './routes/ProdutoList';
 import DetalhesProdutos from './routes/ProdutoDetail';
 import CreateProdutoForm from './routes/CreateProdutoForm';
+import EditarProdutoForm from './routes/EditarProdutoForm/inde';
 
 const router = createBrowserRouter([
   {path:"/", element: <App/>, errorElement: <Error/>, children:[
     {path:"/", element: <Home/>},
     {path:"/produtos", element:<ProdutoList/>},
     {path:"/produtos/:id", element: <DetalhesProdutos/>},
-    {path:"/produtos/criar", element: <CreateProdutoForm/>}
+    {path:"/produtos/criar", element: <CreateProdutoForm/>},
+    {path:"/produtos/editar/:id", element: <EditarProdutoForm/>}
   ]}
 ]);
 
