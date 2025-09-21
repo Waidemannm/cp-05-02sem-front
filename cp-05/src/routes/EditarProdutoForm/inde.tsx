@@ -13,11 +13,18 @@ export default function EditarProdutoForm(){
 
     useEffect(() => {
         const fetchdata = async () => {
-            const response = await fetch(`http://localhost:3001/produtos/${id}`);
-            const data: TipoMc =  await response.json();
-            setValue("nome", data.nome);
-            setValue("preco", data.preco);
-            setValue("urlImg", data.urlImg);
+            try{
+                const response = await fetch(`http://localhost:3001/produtos/${id}`);
+                if(!response.ok){
+                    throw new Error("Produto não encontrado");
+                }
+                const data: TipoMc =  await response.json();
+                setValue("nome", data.nome);
+                setValue("preco", data.preco);
+                setValue("urlImg", data.urlImg);
+            }catch(error){
+                console.error("Erro ao buscar produto:", error);
+            }
         }
         fetchdata();
     }, [id, setValue])

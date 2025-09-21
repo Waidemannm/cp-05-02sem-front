@@ -8,17 +8,25 @@ export default function DeleteProduto(){
     const navigate = useNavigate(); 
     
     useEffect(() => {
-        const fetchdata = async () => {
-            await fetch(`http://localhost:3001/produtos/${id}`, {
-            method: "DELETE",
-            headers:{
-                "Content-Type": "application/json"
-            },
-        });
-        alert("Produto apagado com sucesso!");
-        navigate(`/produtos`);
+        const deletarProduto = async () => {
+            const confirmacao = window.confirm("Tem certeza que deseja apagar este produto?");
+            if (!confirmacao) {
+                navigate(`/produtos`);
+                return;
             }
-            fetchdata();
+            try{
+                await fetch(`http://localhost:3001/produtos/${id}`, {
+                    method: "DELETE",
+                });
+                alert("Produto apagado com sucesso!");
+                navigate(`/produtos`);
+            } catch(error){
+                console.error("Erro ao apagar produto:", error);
+                alert("Erro ao apagar produto. Tente novamente mais tarde.");
+                navigate(`/produtos`);
+            }
+        };
+        deletarProduto();
         }, [id, navigate])
 
 
