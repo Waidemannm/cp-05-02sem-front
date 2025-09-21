@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import type { TipoMc } from "../../types/tipoMc";
-import Form from "../Form/Form";
+import Form from "./../../components/Form/Form";
 
 export default function CreateProdutoForm() {
 
@@ -25,9 +25,12 @@ export default function CreateProdutoForm() {
     });
 
     return(
-        <Form
-        register={register}
-        onSubmit={onSubmit}
-        />
+        <main>
+           <h1 className="text">Adicionando Produto</h1>
+           <Form
+               register={register}
+               onSubmit={onSubmit}
+           />
+        </main>
     );
 }

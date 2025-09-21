@@ -22,17 +22,12 @@
   }
 }
 
-@layer Adicionar{
-    .pageAdd{
-        @apply flex justify-center ;
-    }
-}
 
 @layer createForm{
     .pageForm{
         @apply flex justify-center ;
     }
-    .adcProduto{
+    .btnProduto{
     @apply text-black text-center text-2xl font-bold  flex flex-row justify-center items-center;
   }
   .form{
