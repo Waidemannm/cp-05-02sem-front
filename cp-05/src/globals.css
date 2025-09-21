@@ -7,7 +7,7 @@
 
 @layer components {
   .imgCard{
-    @apply w-[19vw] h-[17vh];
+    @apply w-[19vw] h-[20vh];
   }
 
   .pageCards{
@@ -18,7 +18,7 @@
   }
 
   .card {
-    @apply flex flex-col h-[45vh] border-2 m-10 w-[15vw] p-8 text-center gap-8;
+    @apply flex flex-col h-[55vh] border-2 m-10 w-[18vw] p-8 text-center gap-8;
   }
 }
 
@@ -43,14 +43,14 @@
         @apply flex justify-center;
     }
     .imgDetails{
-        @apply  w-[13vw] h-[15vh];
+        @apply  w-[13vw] h-[19vh];
 
         & a{
             @apply flex flex-col justify-center items-center;
         }
     }   
     .details{
-        @apply flex flex-col text-2xl justify-center items-center  h-[40vh] border-2 m-10 w-[15vw] p-10 text-center;
+        @apply flex flex-col text-2xl justify-center items-center  h-[45vh] border-2 m-10 w-[19vw] p-10 text-center;
         & p{
             @apply m-2 text-gray-600 text-center text-2xl;
         }
