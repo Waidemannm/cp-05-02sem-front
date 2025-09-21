@@ -104,3 +104,18 @@ Gabriel Sbrana Campos, RM: 565849
 Thiago Rodrigues da Mota, RM: 563650
 
  # detalhes do projeto
+O projeto cp-05-02sem-front é uma aplicação frontend desenvolvida em React com TypeScript, criada como parte de um desafio acadêmico para exercitar os principais conceitos de desenvolvimento web moderno. A proposta consiste em implementar, de forma prática e organizada, todas as operações do ciclo CRUD (Create, Read, Update, Delete) em um contexto de listagem e gerenciamento de produtos.
+
+A aplicação foi estruturada em etapas, contemplando desde a listagem de dados consumidos por meio de requisições HTTP até a criação de rotas dinâmicas e manipulação de formulários. Cada exercício representa um avanço incremental no domínio das ferramentas:
+
+Listagem de produtos (GET): a aplicação consome dados de uma API e exibe os produtos de maneira organizada, utilizando componentes React e estilização padronizada.
+
+Detalhes de produto por ID (rota dinâmica): a navegação inclui rotas parametrizadas que permitem acessar informações específicas de um item.
+
+Criação de produto (POST): formulários construídos com a biblioteca react-hook-form facilitam a coleta e validação de dados antes de enviar novas informações ao backend.
+
+Edição de produto (PUT): o sistema possibilita atualizar registros existentes, mantendo consistência com os dados exibidos.
+
+Exclusão de produto (DELETE): a funcionalidade de remoção fecha o ciclo CRUD, garantindo ao usuário total controle sobre os itens.
+
+Além do uso de React Hooks como useState, useEffect, useParams e useNavigate, a aplicação reforça boas práticas modernas, como tipagem forte em TypeScript para maior segurança e manutenção, além da organização dos componentes em módulos reutilizáveis.
